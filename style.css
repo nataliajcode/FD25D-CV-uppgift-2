@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #232526, #414345);
+    color: #edecec;
+    min-height: 100vh;
+}
+
+.header {
+    display: grid;
+    justify-items: end;
+    background: transparent;
+    color: #fff;
+    padding: 1rem;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 5rem;
+}
+
+.header a {
+    color: #ebebeb;
+    padding-right: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-text h1 {
+    font-weight: bold;
+    bottom: 10rem;
+    font-size: 2rem; 
+    font-weight: bold; 
+    letter-spacing: 2px; /* Lite större avstånd mellan bokstäverna */
+    color: #fff; 
+    text-transform: uppercase; /* Skrev rubriken med versaler */
+    line-height: 1.4; /* Ökade radavståndet så det blir lättare att läsa */
+    text-align: center; 
+
+}
+
+.profile-text p {
+    margin-top: 3rem; 
+    text-align: center;
+    font-size: 0.9rem;  
+    letter-spacing: 3px;
+    line-height: 2; /* Ökat avståndet mellan rader */
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 kolumner */
+    gap: 2rem; /* gap mellan sektionerna */
+}
+
+.profile-image-section, .profile-text-section {
+    padding: 1rem; /* Lite inre utrymme i sektionerna */
+}
+
+@media(min-width: 768px) {
+    .main-grid {
+        grid-template-columns: 1fr 1fr;  /* 2 kolumner */
+        gap: 2rem; /* Gap mellan sektionerna */
+    }
+
+    .profile-content {
+        display: grid;
+        grid-template-columns: fr 1fr; /* sektionerna utrymme lika mycket */
+        gap: 1rem;
+        height: 100%;
+    }
+}
+
+.profile-image {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgb(0, 0, 0) 100%);
+    background-color: #333333;
+    overflow: hidden;
+    height: 100%;
+    color: #333333;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F5EEE6;
+    color:#000;
+    padding: 4rem;
+    border-radius: 1px;
+}
+
+.profile-text .profile-link {
+    padding: 0.5rem 1rem;
+    align-items: center;
+    margin-top: 8rem;
+    color: #f1f0f0;
+    border-radius: 4px;
+}
+
+.project-cards {
+    display: grid;
+    gap: 2rem;
+    border-width: 5px;
+    border-color: #ccc;
+    max-width: 100%;
+    padding: 2rem;
+    border-color: #000000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media(min-width: 768px) {
+    .project-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.projects-title {
+ margin-left: 38px;
+ letter-spacing: 1px;
+}
+
+.project-card {
+    background-color: #F5EEE6;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 1rem;
+    border-radius: 1px;
+    border-width: 20px;
+    border-color: #000000;
+}
+
+.project-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 0.5rem 1rem;
+    background-color: #000000;
+    color: #f0efef;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.profile-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0c0b0b;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.footer {
+    background-color: #f8eee7;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    margin: 0 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer a:hover {
+    color: #ff9900;
+}
+
+.material-symbols-outlined {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.about-section {
+    color: #f1f1f1;
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.about-section h1{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.contact-section {
+    background-color: #F5EEE6; 
+    color: #333; 
+    padding: 2rem;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Lätt skugga */
+    margin: 2rem auto; /* Marginal runt sektionen */
+    max-width: 800px; /* Begränsar bredden */
+  }
+  
+  .contact-section h1 {
+    font-size: 2rem;
+    color: #333; 
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .contact-section form {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+  }
+  
+  .contact-section label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .contact-section button {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    background-color: #333; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-section button:hover {
+    background-color: #555; 
+  }
+  
+
+  .main-grid {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .footer {
+    color: rgb(27, 25, 25); 
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 80px;
+  }
