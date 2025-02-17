@@ -218,9 +218,9 @@ body {
     color: #333; 
     padding: 2rem;
     border-radius: 8px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Lätt skugga */
-    margin: 2rem auto; /* Marginal runt sektionen */
-    max-width: 800px; /* Begränsar bredden */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 2rem auto; 
+    max-width: 800px; 
   }
   
   .contact-section h1 {
@@ -270,8 +270,6 @@ body {
     background-color: #555; 
   }
 
-
-  /* Mobilanpassning */
 @media (max-width: 768px) {
     .main-grid {
         display: flex;
@@ -302,9 +300,9 @@ body {
 
     .header ul {
         display: flex;
-        justify-content: flex-start;  /* Justera länkarna till vänster */
+        justify-content: flex-start;  
         flex-direction: column;
-        gap: 1rem;  /* Minska avståndet mellan länkar om det behövs */
+        gap: 1rem;  
     }
   
     .profile-text h1 {
