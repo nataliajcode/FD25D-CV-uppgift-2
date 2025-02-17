@@ -73,7 +73,7 @@ body {
 
     .profile-content {
         display: grid;
-        grid-template-columns: fr 1fr; /* sektionerna utrymme lika mycket */
+        grid-template-columns: 1fr 1fr; /* sektionerna utrymme lika mycket */
         gap: 1rem;
         height: 100%;
     }
@@ -177,6 +177,9 @@ body {
     background-color: #f8eee7;
     text-align: center;
     font-size: 16px;
+    color: rgb(27, 25, 25); 
+    padding: 20px;
+    margin-top: 80px;
 }
 
 .footer a {
@@ -266,18 +269,62 @@ body {
   .contact-section button:hover {
     background-color: #555; 
   }
-  
 
-  .main-grid {
-    display: grid;
-    gap: 2rem;
-    padding: 2rem;
-  }
+
+  /* Mobilanpassning */
+@media (max-width: 768px) {
+    .main-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .project-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 1rem;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+        padding: 1rem;
+    }
+
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+
+    .header ul {
+        display: flex;
+        justify-content: flex-start;  /* Justera länkarna till vänster */
+        flex-direction: column;
+        gap: 1rem;  /* Minska avståndet mellan länkar om det behövs */
+    }
   
-  .footer {
-    color: rgb(27, 25, 25); 
-    text-align: center;
-    padding: 20px;
-    font-size: 16px;
-    margin-top: 80px;
-  }
+    .profile-text h1 {
+        font-weight: bold;
+        font-size: 1.0rem; 
+        letter-spacing: 2px; 
+        color: #fff; 
+        text-transform: uppercase;
+        line-height: 1.4; 
+        text-align: center;
+        margin-top: 10rem; 
+    }
+
+    .profile-text p{
+        
+        font-size: 0.6rem;
+    }
+    .contact-section {
+        max-width: 90%;  
+        padding: 1rem;   
+        margin: 1rem auto;  
+    }
+}
